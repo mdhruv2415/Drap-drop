@@ -50,6 +50,8 @@ function dragDrop(e) {
     
         // display the draggable element
     draggable.classList.remove('hide');
+    succ();
+    
 }
 function dragStart(e) {
     e.dataTransfer.setData('text/plain', e.target.id);
@@ -95,3 +97,13 @@ document.getElementById('reset').addEventListener('click', (e) => {
         initialbox.append(containedBox);
     }
 })
+
+const succ = () => {
+    document.querySelector(".notify").classList.add("active");
+    document.querySelector("#notifyType").classList.add("success");
+    
+    setTimeout(() => {
+        document.querySelector(".notify").classList.remove("active");
+        document.querySelector("#notifyType").classList.remove("success");
+    },2000);
+}
