@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    background-color: #79A7D3;
+}
+
+.container {
+    width: 100vw;
+}
+.main-heading {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 15px;
+    color: #1E2761;
+}
+.main-container {
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    min-height: 70vh;
+    height: min-content;
+    width: 30vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    background-color: #8A307F;
+    padding-top: 25px;
+}
+
+.box2 {
+    background-color: #6883BC;
+    padding-top: 25px;
+}
+
+.initials {
+    width: 80%;
+    min-height: 45px;
+    text-align: center;
+    padding-block: 10px;
+    margin-block: 10px;
+    margin-inline: auto;
+    border-radius: 5px;
+    box-shadow: 0.1px 0.1px 0.1px;
+}
+.odd {
+    background-color: #E7E8D1;
+}
+.even {
+    background-color: #A7BEAE;
+}
+.reset-button {
+    width: 15vw;
+    margin-left: 45%;
+    margin-top: 3%;
+    padding: 10px;
+    font-size: xx-large;
+    font-weight: 500;
+    background-color:#234E70;
+    border-radius: 5px;
+    border: none;
+    color: rgb(179, 185, 185);
+    box-shadow: 0.5px 0.5px 0.5px #234E70;
+}
+.hide {
+    display: none;
+}
+
+.drag-over {
+    border: solid 4px black;
+}
